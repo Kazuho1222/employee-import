@@ -49,5 +49,21 @@ jobs:
       - name: Build Assets
         run: npm run build
 
+      - name: Setup Test Database
+        run: |
+          PGPASSWORD=${{ secrets.DB_PASSWORD }} createdb -h ${{ secrets.DB_HOST }} -U ${{ secrets.DB_USERNAME }} employee_import_test
+          php artisan migrate --env=testing
+
       - name: Tests
-        run: ./vendor/bin/pest
+        run: |
+          ./vendor/bin/pest --coverage --coverage-clover=coverage.xml
+
+      - name: Store Coverage Reports
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: |
+            coverage-report
+            coverage.xml
+            storage/logs/laravel.log
