@@ -1,0 +1,4 @@
+employee_id,employee_name,gender,birthday,email
+132301,テスト01,female,1991/4/25,test01@example.com
+132302,テスト02,male,1988/3/2,test02@example.com
+132303,テスト03,female,1993/2/17,test03@example.com

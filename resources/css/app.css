@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body,
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
+}
+
+h1, h2, h3, p {
+    font-family: 'Inter', sans-serif; /* 英数字フォント */
+},
 html {
     --font-sans:
         'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

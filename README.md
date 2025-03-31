@@ -1,37 +1,29 @@
-# 従業員データ インポート機能
+# 従業員データインポートシステム
 
-## 1. 概要
-従業員情報をCSVファイルからデータベースにインポートする機能。
+## 概要
+CSVファイルから従業員データをインポートするWebアプリケーションです。
 
-## 2. 要件定義
-### 2.1. インポート対象のデータ項目
-| カラム名        | 説明           | 型         |
-|---------------|--------------|-----------|
-| employee_id  | 社員番号      | INTEGER   |
-| employee_name | 従業員名      | TEXT      |
-| gender       | 性別（M/F）    | TEXT      |
-| birthday     | 生年月日      | DATE      |
-| email        | メールアドレス | TEXT      |
+## ドキュメント
+- [要件定義書](docs/requirements.md)
+- [設計書](docs/design/)
+  - [データベース設計](docs/design/database.md)
+  - [API設計](docs/design/api.md)
+  - [UI設計](docs/design/ui.md)
+- [セットアップガイド](docs/setup/)
+  - [開発環境セットアップ](docs/setup/development.md)
+  - [デプロイ手順](docs/setup/deployment.md)
+- [テスト結果](docs/test-results.md)
 
-### 2.2. 仕様
-- ドラッグ&ドロップを使ったCSVアップロードができること。
-- CSVファイルをアップロードし、PostgreSQLの `employees` テーブルにデータをインポートする。
-- `employee_id` をキーとして、**存在しない場合は新規作成、存在する場合は更新** する。
-- CSVのヘッダーは英語表記のみ（日本語不可）。
-- バリデーション：
-  - `employee_id` は必須
-  - `email` はメールアドレスの形式をチェック
-  - `birthday` は `YYYY-MM-DD` の形式
+## 技術スタック
+- フロントエンド: Vue.js + Tailwind CSS
+- バックエンド: Laravel
+- データベース: PostgreSQL
 
-## 非機能要件
-- 一度にインポートできる最大件数: 10,000件
-- CSVアップロード処理が30秒以内でタイムアウトしないようにする。
+## 開発環境のセットアップ
+詳細は[開発環境セットアップ](docs/setup/development.md)を参照してください。
 
-## 3. 環境構築手順
-（LaravelのセットアップやDB接続の設定方法などを記述）
+## デプロイ
+詳細は[デプロイ手順](docs/setup/deployment.md)を参照してください。
 
-## 4. 使用技術
-- Laravel 12
-- Vue.js 3
-- PostgreSQL 15
-- tailwindcss
+## ライセンス
+MIT
