@@ -29,13 +29,14 @@ npm install
 ```bash
 cp .env.example .env
 ```
+2. `.env` ファイルを開き、必要な環境変数を設定します。
 
-2. アプリケーションキーの生成
+3. アプリケーションキーの生成
 ```bash
 php artisan key:generate
 ```
 
-3. データベース設定
+4. データベース設定
 ```env
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
