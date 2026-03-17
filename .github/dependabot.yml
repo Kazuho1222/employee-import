@@ -1,0 +1,42 @@
+# Enhanced dependabot.yml with better security and automation
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    # セキュリティアップデートは即座に実行
+    open-pull-requests-limit: 10
+    reviewers:
+      - 'Kazuho1222'
+    assignees:
+      - 'Kazuho1222'
+    commit-message:
+      prefix: 'chore'
+      include: 'scope'
+    groups:
+      all-dependencies:
+        patterns:
+          - '*'
+
+  # Enable version updates for Docker
+  - package-ecosystem: 'docker'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+    open-pull-requests-limit: 5
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: 'ci'
+      include: 'scope'
