@@ -19,17 +19,17 @@
 		"@vue/eslint-config-typescript": "^14.5.0",
 		"@vue/runtime-dom": "^3.5.13",
 		"@vue/test-utils": "^2.2.7",
-		"@vue/tsconfig": "^0.9.0",
-		"eslint": "^10.0.3",
+		"@vue/tsconfig": "^0.9.1",
+		"eslint": "^10.1.0",
 		"eslint-config-prettier": "^10.1.2",
 		"eslint-plugin-vue": "^10.8.0",
-		"jsdom": "^29.0.0",
+		"jsdom": "^29.0.1",
 		"prettier": "^3.5.3",
 		"prettier-plugin-organize-imports": "^4.1.0",
 		"prettier-plugin-tailwindcss": "^0.7.2",
 		"typescript-eslint": "^8.57.1",
-		"vitest": "^4.1.0",
-		"vue-tsc": "^3.2.5"
+		"vitest": "^4.1.1",
+		"vue-tsc": "^3.2.6"
 	},
 	"dependencies": {
 		"@inertiajs/vue3": "^2.3.18",
@@ -38,21 +38,21 @@
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"concurrently": "^9.1.2",
-		"laravel-vite-plugin": "^2.1",
-		"lucide": "^0.577.0",
-		"lucide-vue-next": "^0.577.0",
+		"laravel-vite-plugin": "^3.0",
+		"lucide": "^1.0.1",
+		"lucide-vue-next": "^1.0.0",
 		"radix-vue": "^1.9.17",
 		"tailwind-merge": "^3.5.0",
-		"tailwindcss": "^4.2.1",
+		"tailwindcss": "^4.2.2",
 		"tailwindcss-animate": "^1.0.7",
-		"typescript": "^5.8.3",
-		"vite": "^8.0.0",
+		"typescript": "^6.0.2",
+		"vite": "^8.0.2",
 		"vue": "^3.5.30",
 		"ziggy-js": "^2.6.2"
 	},
 	"optionalDependencies": {
-		"@rollup/rollup-linux-x64-gnu": "4.59.0",
-		"@tailwindcss/oxide-linux-x64-gnu": "^4.1.5",
+		"@rollup/rollup-linux-x64-gnu": "4.60.0",
+		"@tailwindcss/oxide-linux-x64-gnu": "^4.2.2",
 		"lightningcss-linux-x64-gnu": "^1.29.3"
 	}
 }
