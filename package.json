@@ -27,7 +27,7 @@
 		"prettier": "^3.9.10",
 		"prettier-plugin-organize-imports": "^4.1.0",
 		"prettier-plugin-tailwindcss": "^0.8.1",
-		"typescript-eslint": "^8.71.2",
+		"typescript-eslint": "^8.72.0",
 		"vitest": "^5.0.5",
 		"vue-tsc": "^3.3.13"
 	},
@@ -39,19 +39,19 @@
 		"clsx": "^2.1.1",
 		"concurrently": "^10.0.6",
 		"laravel-vite-plugin": "^3.2",
-		"lucide": "^1.59.0",
+		"lucide": "^1.61.0",
 		"lucide-vue-next": "^1.0.0",
 		"radix-vue": "^1.9.17",
 		"tailwind-merge": "^3.7.0",
 		"tailwindcss": "^4.3.3",
 		"tailwindcss-animate": "^1.0.7",
 		"typescript": "^7.0.2",
-		"vite": "^8.3.4",
+		"vite": "^8.3.5",
 		"vue": "^3.5.44",
 		"ziggy-js": "^2.6.5"
 	},
 	"optionalDependencies": {
-		"@rollup/rollup-linux-x64-gnu": "4.64.7",
+		"@rollup/rollup-linux-x64-gnu": "4.65.0",
 		"@tailwindcss/oxide-linux-x64-gnu": "^4.3.3",
 		"lightningcss-linux-x64-gnu": "^1.33.0"
 	},
